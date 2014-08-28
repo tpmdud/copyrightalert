@@ -28,6 +28,7 @@ $(function(){
 $(function(){
 	$('.tpmcopyalert').tpmcopyalert({
         text : 'This media is copyrighted &copy 2014 by the site owner. All rights reserved.', //custom text goes here
+        alertid: "tpmcopyalert", //only for multible instances needed
     });
 });
 </script>
