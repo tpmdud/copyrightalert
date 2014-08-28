@@ -17,7 +17,6 @@
 				var o = $.extend(defaults, options); //combines defaults and optional Settings
                 var id = '#'+o.alertid;
                 var alert = '<p id='+o.alertid+' style="display:none">'+o.text+'</p>';
-                $('body').append(alert);
                 $(this).bind('contextmenu', function(e){ return false; });
                 $(this).mousedown(function(e) {
                     if(e.which == o.mousebutton) {
@@ -32,6 +31,7 @@
                     }
                 });
     		});
+            $('body').append(alert);
     	}
 	});
 })(jQuery);
